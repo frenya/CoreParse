@@ -22,6 +22,13 @@ typedef CPToken* (^CPRegexpKeywordRecogniserMatchHandler)(NSString* tokenString,
 
 @property (nonatomic, retain) NSRegularExpression* regexp;
 
+// QuickFix
+// NOTE: matchHandler will NOT survive deserialisation
+// if you want to serialize, you need to use quoteType and tokenName properties
+// and benefit from the default token creation
+@property (nonatomic, retain) NSString *tokenName;
+@property (nonatomic, retain) NSString *quoteType;
+
 ///---------------------------------------------------------------------------------------
 /// @name Creating and Initialising a Regexp Keyword Recogniser
 ///---------------------------------------------------------------------------------------
@@ -38,6 +45,9 @@ typedef CPToken* (^CPRegexpKeywordRecogniserMatchHandler)(NSString* tokenString,
  */
 - (id)initWithRegexp:(NSRegularExpression *)regexp matchHandler:(CPRegexpKeywordRecogniserMatchHandler)matchHandler;
 
+// QuickFix
+- (id)initWithRegexp:(NSRegularExpression *)regexp quoteType:(NSString *)quoteType tokenName:(NSString *)tokenName;
+
 /**
  * Initialises a Regexp Recogniser to recognise a specific regexp.
  *
@@ -49,5 +59,7 @@ typedef CPToken* (^CPRegexpKeywordRecogniserMatchHandler)(NSString* tokenString,
  * @see initWithRegexp:
  */
 + (id)recogniserForRegexp:(NSRegularExpression *)regexp matchHandler:(CPRegexpKeywordRecogniserMatchHandler)matchHandler;
+
++ (id)recogniserForRegexp:(NSRegularExpression *)regexp quoteType:(NSString *)quoteType tokenName:(NSString *)tokenName;
 
 @end
