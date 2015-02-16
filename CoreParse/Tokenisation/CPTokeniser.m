@@ -101,21 +101,33 @@ typedef struct
     [[self tokenRecognisers] removeObject:recogniser];
 }
 
-- (CPTokenStream *)tokenise:(NSString *)input
+- (CPTokenStream *)tokenise:(NSString *)input {
+    
+    return [self tokenise:input range:NSMakeRange(0, input.length)];
+    
+}
+
+- (CPTokenStream *)tokenise:(NSString *)input range:(NSRange)range
 {
     CPTokenStream *stream = [[[CPTokenStream alloc] init] autorelease];
     
-    [self tokenise:input into:stream];
+    [self tokenise:input into:stream range:range];
     
     return stream;
 }
 
-- (void)tokenise:(NSString *)input into:(CPTokenStream *)stream
+- (void)tokenise:(NSString *)input into:(CPTokenStream *)stream {
+    
+    [self tokenise:input into:stream range:NSMakeRange(0, input.length)];
+     
+}
+
+- (void)tokenise:(NSString *)input into:(CPTokenStream *)stream range:(NSRange)range
 {
-    NSUInteger currentTokenOffset = 0;
+    NSUInteger currentTokenOffset = range.location;
     NSUInteger currentLineNumber = 0;
     NSUInteger currentColumnNumber = 0;
-    NSUInteger inputLength = [input length];
+    NSUInteger inputLength = NSMaxRange(range);         // NOTE: inputLength is not really a length, rather endIndex + 1
     NSArray *recs = [self tokenRecognisers];
     
     while (currentTokenOffset < inputLength)

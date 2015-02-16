@@ -168,6 +168,11 @@
 - (CPTokenStream *)tokenise:(NSString *)input;
 
 /**
+ * Tokenises a particular range in string.
+ */
+- (CPTokenStream *)tokenise:(NSString *)input range:(NSRange)range;
+
+/**
  * Tokenises an input string into a pre-allocated output CPTokenStream.
  *
  * If the entire input is tokenised a CPEOFToken is added to the end of the result token stream.  If not, the token stream ends with no EOF token.
@@ -177,5 +182,10 @@
  * @param tokenStream The token stream to add tokens to from the input string.
  */
 - (void)tokenise:(NSString *)input into:(CPTokenStream *)tokenStream;
+
+/**
+ * Tokenises a particular range in string.
+ */
+- (void)tokenise:(NSString *)input into:(CPTokenStream *)stream range:(NSRange)range;
 
 @end
