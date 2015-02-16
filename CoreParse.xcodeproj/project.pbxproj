@@ -167,8 +167,49 @@
 		1FC18282139AE3810027F597 /* CPGrammarInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FC18280139AE3800027F597 /* CPGrammarInternal.h */; };
 		1FC18283139AE3810027F597 /* CPGrammarInternal.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC18281139AE3810027F597 /* CPGrammarInternal.m */; };
 		1FC18287139BA47D0027F597 /* CoreParse-template.md in Resources */ = {isa = PBXBuildFile; fileRef = 1FC18286139BA47D0027F597 /* CoreParse-template.md */; };
+		30AB2C7B1A90AB6E00590D0D /* CPTokeniser.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F0E8937130463E900537D04 /* CPTokeniser.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		30AB2C7C1A90AB6E00590D0D /* CPTokenStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F0E8941130466CF00537D04 /* CPTokenStream.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		30AB2C7D1A90AB6E00590D0D /* CPTokenRecogniser.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4683881306AA8500407491 /* CPTokenRecogniser.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		30AB2C7E1A90AB6E00590D0D /* CPKeywordRecogniser.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4683861306AA8500407491 /* CPKeywordRecogniser.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		30AB2C7F1A90AB6E00590D0D /* CPNumberRecogniser.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4683941306BF6200407491 /* CPNumberRecogniser.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		30AB2C801A90AB6E00590D0D /* CPWhiteSpaceRecogniser.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4683A01306D66300407491 /* CPWhiteSpaceRecogniser.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		30AB2C811A90AB6E00590D0D /* CPIdentifierRecogniser.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F1DFCDF1306E3C300B22855 /* CPIdentifierRecogniser.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		30AB2C821A90AB6E00590D0D /* CPQuotedRecogniser.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F1DFCF11307D2C500B22855 /* CPQuotedRecogniser.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		30AB2C831A90AB6E00590D0D /* CPToken.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F0E894A1306795500537D04 /* CPToken.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		30AB2C841A90AB6E00590D0D /* CPEOFToken.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4683901306B71C00407491 /* CPEOFToken.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		30AB2C851A90AB6E00590D0D /* CPErrorToken.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA68D9E14DE98C4005519B9 /* CPErrorToken.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		30AB2C861A90AB6E00590D0D /* CPKeywordToken.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F46838C1306B45400407491 /* CPKeywordToken.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		30AB2C871A90AB6E00590D0D /* CPNumberToken.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4683981306C22800407491 /* CPNumberToken.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		30AB2C881A90AB6E00590D0D /* CPWhiteSpaceToken.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4683A41306D7CB00407491 /* CPWhiteSpaceToken.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		30AB2C891A90AB6E00590D0D /* CPIdentifierToken.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F1DFCE31306E8E800B22855 /* CPIdentifierToken.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		30AB2C8A1A90AB6E00590D0D /* CPQuotedToken.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F1DFCED1307D18900B22855 /* CPQuotedToken.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		30AB2C8B1A90AB6E00590D0D /* CPGrammar.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F50A93C1308604A00C50D7D /* CPGrammar.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		30AB2C8C1A90AB6E00590D0D /* CPGrammarPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FC1827B139ADC800027F597 /* CPGrammarPrivate.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		30AB2C8D1A90AB6E00590D0D /* CPGrammarInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FC18280139AE3800027F597 /* CPGrammarInternal.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		30AB2C8E1A90AB6E00590D0D /* CPRule.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F530B8F1322813E00F52EB5 /* CPRule.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		30AB2C8F1A90AB6E00590D0D /* CPRule+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA866B515DFAEBB005350EE /* CPRule+Internal.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		30AB2C901A90AB6E00590D0D /* CPGrammarSymbol.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB3EB38132D096700ACC453 /* CPGrammarSymbol.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		30AB2C911A90AB6E00590D0D /* CPRHSItem+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA866BE15E18F67005350EE /* CPRHSItem+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		30AB2C921A90AB6F00590D0D /* CPRHSItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F9F83AA13B7CAB9006E939D /* CPRHSItem.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		30AB2C931A90AB6F00590D0D /* CPRHSItemResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FC00D4E14544EDC00DC8D35 /* CPRHSItemResult.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		30AB2C941A90AB6F00590D0D /* CPSyntaxTree.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F530B8513216A1A00F52EB5 /* CPSyntaxTree.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		30AB2C951A90AB6F00590D0D /* CPParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F530B7C13215A6F00F52EB5 /* CPParser.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		30AB2C961A90AB6F00590D0D /* CPShiftReduceAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F3881DF1322ADC9000C8876 /* CPShiftReduceAction.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		30AB2C971A90AB6F00590D0D /* CPShiftReduceState.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F3881E31322AEE8000C8876 /* CPShiftReduceState.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		30AB2C981A90AB6F00590D0D /* CPShiftReduceActionTable.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F3881EB1322B669000C8876 /* CPShiftReduceActionTable.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		30AB2C991A90AB6F00590D0D /* CPShiftReduceGotoTable.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F3881EF1322B69E000C8876 /* CPShiftReduceGotoTable.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		30AB2C9A1A90AB6F00590D0D /* CPItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F3882071323F75E000C8876 /* CPItem.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		30AB2C9B1A90AB6F00590D0D /* CPLR1Item.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB3EB2E132BB30300ACC453 /* CPLR1Item.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		30AB2C9C1A90AB6F00590D0D /* CPShiftReduceParserProtectedMethods.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F3882031323DDD6000C8876 /* CPShiftReduceParserProtectedMethods.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		30AB2C9D1A90AB6F00590D0D /* CPShiftReduceParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F3881DA1322ACE7000C8876 /* CPShiftReduceParser.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		30AB2C9E1A90AB6F00590D0D /* CPSLRParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F3881FF1323DB49000C8876 /* CPSLRParser.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		30AB2C9F1A90AB6F00590D0D /* CPLR1Parser.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB3EB2A132BB2E600ACC453 /* CPLR1Parser.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		30AB2CA01A90AB6F00590D0D /* CPLALR1Parser.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F6D448E1348CC9500E982C7 /* CPLALR1Parser.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		30AB2CA11A90AB6F00590D0D /* CPRecoveryAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F893A1D14DEEBFC00316FF7 /* CPRecoveryAction.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		30AB2CA21A90AC5800590D0D /* CoreParse.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F0E8934130463D000537D04 /* CoreParse.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		30AB2CD61A90B92B00590D0D /* CPJSONParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F45A2E213422E1300092D78 /* CPJSONParser.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		54197209188F7D49004240B4 /* CPRegexpRecogniser.h in Headers */ = {isa = PBXBuildFile; fileRef = 54197207188F7D49004240B4 /* CPRegexpRecogniser.h */; };
-		5419720A188F7D49004240B4 /* CPRegexpRecogniser.h in Headers */ = {isa = PBXBuildFile; fileRef = 54197207188F7D49004240B4 /* CPRegexpRecogniser.h */; };
+		5419720A188F7D49004240B4 /* CPRegexpRecogniser.h in Headers */ = {isa = PBXBuildFile; fileRef = 54197207188F7D49004240B4 /* CPRegexpRecogniser.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		5419720B188F7D49004240B4 /* CPRegexpRecogniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 54197208188F7D49004240B4 /* CPRegexpRecogniser.m */; };
 		5419720D188F7D49004240B4 /* CPRegexpRecogniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 54197208188F7D49004240B4 /* CPRegexpRecogniser.m */; };
 		5419721D188F9A54004240B4 /* CPRegexpRecogniserTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5419721C188F9A54004240B4 /* CPRegexpRecogniserTest.m */; };
@@ -322,6 +363,7 @@
 		1FC18286139BA47D0027F597 /* CoreParse-template.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "CoreParse-template.md"; sourceTree = "<group>"; };
 		1FE77D551375AE6F00879A41 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1FE77D821375EA8F00879A41 /* CoreParse Documentation */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "CoreParse Documentation"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30AB2C7A1A90A9C200590D0D /* CommonConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = CommonConfig.xcconfig; path = ../../FFUtilitiesKit/CommonConfig.xcconfig; sourceTree = "<group>"; };
 		54197207188F7D49004240B4 /* CPRegexpRecogniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPRegexpRecogniser.h; sourceTree = "<group>"; };
 		54197208188F7D49004240B4 /* CPRegexpRecogniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPRegexpRecogniser.m; sourceTree = "<group>"; };
 		5419721C188F9A54004240B4 /* CPRegexpRecogniserTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPRegexpRecogniserTest.m; sourceTree = "<group>"; };
@@ -374,6 +416,7 @@
 		1F0E88EA130462F300537D04 = {
 			isa = PBXGroup;
 			children = (
+				30AB2C7A1A90A9C200590D0D /* CommonConfig.xcconfig */,
 				1FC18284139BA4460027F597 /* CompanionGuides */,
 				1F0E88FF130462F300537D04 /* CoreParse */,
 				1F0E8910130462F300537D04 /* CoreParseTests */,
@@ -707,7 +750,48 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30AB2C7B1A90AB6E00590D0D /* CPTokeniser.h in Headers */,
+				30AB2C7C1A90AB6E00590D0D /* CPTokenStream.h in Headers */,
+				30AB2C7D1A90AB6E00590D0D /* CPTokenRecogniser.h in Headers */,
+				30AB2C7E1A90AB6E00590D0D /* CPKeywordRecogniser.h in Headers */,
+				30AB2C7F1A90AB6E00590D0D /* CPNumberRecogniser.h in Headers */,
+				30AB2C801A90AB6E00590D0D /* CPWhiteSpaceRecogniser.h in Headers */,
+				30AB2C811A90AB6E00590D0D /* CPIdentifierRecogniser.h in Headers */,
+				30AB2C821A90AB6E00590D0D /* CPQuotedRecogniser.h in Headers */,
+				30AB2C831A90AB6E00590D0D /* CPToken.h in Headers */,
+				30AB2C841A90AB6E00590D0D /* CPEOFToken.h in Headers */,
+				30AB2C851A90AB6E00590D0D /* CPErrorToken.h in Headers */,
+				30AB2C861A90AB6E00590D0D /* CPKeywordToken.h in Headers */,
+				30AB2C871A90AB6E00590D0D /* CPNumberToken.h in Headers */,
+				30AB2C881A90AB6E00590D0D /* CPWhiteSpaceToken.h in Headers */,
+				30AB2C891A90AB6E00590D0D /* CPIdentifierToken.h in Headers */,
+				30AB2C8A1A90AB6E00590D0D /* CPQuotedToken.h in Headers */,
+				30AB2C8B1A90AB6E00590D0D /* CPGrammar.h in Headers */,
+				30AB2C8C1A90AB6E00590D0D /* CPGrammarPrivate.h in Headers */,
+				30AB2C8D1A90AB6E00590D0D /* CPGrammarInternal.h in Headers */,
+				30AB2C8E1A90AB6E00590D0D /* CPRule.h in Headers */,
+				30AB2C8F1A90AB6E00590D0D /* CPRule+Internal.h in Headers */,
+				30AB2C901A90AB6E00590D0D /* CPGrammarSymbol.h in Headers */,
+				30AB2C911A90AB6E00590D0D /* CPRHSItem+Private.h in Headers */,
+				30AB2C921A90AB6F00590D0D /* CPRHSItem.h in Headers */,
+				30AB2C931A90AB6F00590D0D /* CPRHSItemResult.h in Headers */,
+				30AB2C941A90AB6F00590D0D /* CPSyntaxTree.h in Headers */,
+				30AB2C951A90AB6F00590D0D /* CPParser.h in Headers */,
+				30AB2C961A90AB6F00590D0D /* CPShiftReduceAction.h in Headers */,
+				30AB2C971A90AB6F00590D0D /* CPShiftReduceState.h in Headers */,
+				30AB2C981A90AB6F00590D0D /* CPShiftReduceActionTable.h in Headers */,
+				30AB2C991A90AB6F00590D0D /* CPShiftReduceGotoTable.h in Headers */,
+				30AB2C9A1A90AB6F00590D0D /* CPItem.h in Headers */,
+				30AB2C9B1A90AB6F00590D0D /* CPLR1Item.h in Headers */,
+				30AB2C9C1A90AB6F00590D0D /* CPShiftReduceParserProtectedMethods.h in Headers */,
+				30AB2C9D1A90AB6F00590D0D /* CPShiftReduceParser.h in Headers */,
+				30AB2C9E1A90AB6F00590D0D /* CPSLRParser.h in Headers */,
+				30AB2C9F1A90AB6F00590D0D /* CPLR1Parser.h in Headers */,
+				30AB2CA01A90AB6F00590D0D /* CPLALR1Parser.h in Headers */,
+				30AB2CA11A90AB6F00590D0D /* CPRecoveryAction.h in Headers */,
 				5419720A188F7D49004240B4 /* CPRegexpRecogniser.h in Headers */,
+				30AB2CD61A90B92B00590D0D /* CPJSONParser.h in Headers */,
+				30AB2CA21A90AC5800590D0D /* CoreParse.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -749,7 +833,7 @@
 			name = CoreParseTests;
 			productName = CoreParseTests;
 			productReference = 1F0E890B130462F300537D04 /* CoreParseTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 		1F92817E145C11050033BC34 /* iOSCoreParse */ = {
 			isa = PBXNativeTarget;
@@ -785,7 +869,7 @@
 			name = iOSCoreParseTests;
 			productName = iOSCoreParseTests;
 			productReference = 1F92818C145C11050033BC34 /* CoreParseTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 		1FE77D811375EA8F00879A41 /* CoreParse Documentation */ = {
 			isa = PBXNativeTarget;
@@ -1078,6 +1162,7 @@
 /* Begin XCBuildConfiguration section */
 		1F0E891B130462F300537D04 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30AB2C7A1A90A9C200590D0D /* CommonConfig.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
@@ -1119,6 +1204,7 @@
 		};
 		1F0E891C130462F300537D04 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30AB2C7A1A90A9C200590D0D /* CommonConfig.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
@@ -1294,7 +1380,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				VALID_ARCHS = "armv7 armv7s";
+				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Debug;
 		};
@@ -1315,7 +1401,7 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				VALIDATE_PRODUCT = YES;
-				VALID_ARCHS = "armv7 armv7s";
+				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Release;
 		};
